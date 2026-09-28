@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mufida Savadi | Data Analyst</title>
+<meta name="description" content="Portfolio of Mufida Savadi, Computer Science graduate and data analyst skilled in Python, SQL, Power BI and machine learning.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F3A;--navy2:#13315C;--teal:#0E9F8E;--ink:#1B2437;--mute:#5B6579;--line:#E3E8F0;--soft:#F3F6FA;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.65 "Plus Jakarta Sans","Segoe UI",Arial,sans-serif}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:18px;text-decoration:none;color:var(--navy)}
+.menu{display:flex;gap:28px;align-items:center}
+.menu a{text-decoration:none;font-size:15px;font-weight:500;color:var(--mute)}
+.menu a:hover{color:var(--navy)}
+.menu .cta{background:var(--navy);color:#fff;padding:9px 18px;border-radius:8px;font-weight:600}
+.menu .cta:hover{background:var(--navy2);color:#fff}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:88px 0 0}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:500}
+.badge i{width:8px;height:8px;border-radius:50%;background:#3EE0C9;display:block}
+h1{font-size:clamp(40px,7vw,68px);line-height:1.05;letter-spacing:-.03em;font-weight:800;margin:24px 0 12px}
+.sub{font-size:clamp(20px,3vw,26px);font-weight:600;color:#7FE9DA;margin:0 0 20px}
+.hero p.lead{max-width:60ch;font-size:19px;color:#CFD9EA;margin:0 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:64px}
+.btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.p{background:var(--teal);color:#fff}.btn.p:hover{background:#0B8577}
+.btn.s{border:2px solid rgba(255,255,255,.4);color:#fff}.btn.s:hover{background:rgba(255,255,255,.1)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;color:var(--ink);border-radius:14px 14px 0 0;box-shadow:0 -6px 30px rgba(0,0,0,.12)}
+.stat{padding:26px 24px;border-right:1px solid var(--line)}
+.stat:last-child{border:0}
+.stat b{display:block;font-size:34px;font-weight:800;color:var(--navy);line-height:1.1}
+.stat span{font-size:14px;color:var(--mute)}
+section{padding:84px 0}
+section.alt{background:var(--soft)}
+.k{color:var(--teal);font-weight:700;font-size:14px;margin-bottom:8px}
+h2{font-size:clamp(28px,4vw,38px);letter-spacing:-.02em;line-height:1.15;margin:0 0 40px;color:var(--navy);font-weight:800}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+.about p{margin:0 0 16px;max-width:62ch}
+.facts{background:var(--soft);border-radius:14px;padding:28px}
+.facts dt{font-size:13px;color:var(--mute);font-weight:600}
+.facts dd{margin:0 0 16px;font-weight:600}
+.facts dd:last-child{margin:0}
+.roles{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+.roles p{margin:0 0 14px;font-weight:600;color:var(--navy)}
+.roles .tags{padding:0;margin:0}
+.roles .tags span{background:var(--navy);color:#fff;padding:8px 16px;border-radius:99px;font-size:15px}
+.tl{border-left:3px solid var(--teal);padding-left:32px;position:relative}
+.tl:before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--teal);border:3px solid #fff}
+.tl h3{margin:0;font-size:22px;color:var(--navy)}
+.tl .m{color:var(--mute);font-weight:500;margin:2px 0 14px}
+.tl ul,.card ul{margin:0;padding-left:20px}
+.tl li,.card li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 12px 32px rgba(11,31,58,.1);transform:translateY(-3px)}
+.card h3{font-size:20px;line-height:1.25;margin:0 0 6px;color:var(--navy)}
+.card .type{font-size:14px;font-weight:600;color:var(--teal);margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:18px}
+.tags span{background:var(--soft);border-radius:6px;padding:4px 10px;font-size:13px;font-weight:600;color:var(--navy2)}
+.pub{margin-top:24px;background:var(--navy);color:#fff;border-radius:14px;padding:28px 32px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pub b{display:block;font-size:14px;color:#7FE9DA;margin-bottom:4px}
+.pub span{font-size:19px;font-weight:600}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.sk{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.sk h3{margin:0 0 14px;font-size:17px;color:var(--navy)}
+.sk .tags{padding:0;margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.two h3{margin:0 0 4px;font-size:20px;color:var(--navy)}
+.two .m{color:var(--mute);margin:0 0 4px}
+.two ul{padding-left:20px;margin:8px 0 0}
+.contact{background:var(--navy);color:#fff;text-align:center}
+.contact h2{color:#fff;margin-bottom:12px}
+.contact p{color:#CFD9EA;margin:0 auto 32px;max-width:52ch}
+.cl{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+footer{background:#081629;color:#8FA0BC;text-align:center;padding:24px;font-size:14px}
+@media (max-width:860px){
+.menu a:not(.cta){display:none}
+.stats{grid-template-columns:1fr 1fr}
+.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.about,.grid,.skills,.two{grid-template-columns:1fr}
+section{padding:60px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top">Mufida Savadi</a>
+<div class="menu">
+<a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a>
+<a class="cta" href="#contact">Contact</a>
+</div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<span class="badge"><i></i>Open to data analytics roles</span>
+<h1>Mufida Savadi</h1>
+<p class="sub">Data Analyst | Machine Learning | Power BI</p>
+<p class="lead">Computer Science graduate who turns raw data into clear dashboards and predictive models that support business decisions.</p>
+<div class="btns">
+<a class="btn p" href="mailto:mufidasavadi@gmail.com">Email me</a>
+<a class="btn s" href="https://linkedin.com/in/mufida-savadi-6b97162a3">View LinkedIn</a>
+</div>
+<div class="stats">
+<div class="stat"><b>8.64</b><span>CGPA, BE Computer Science</span></div>
+<div class="stat"><b>10,000+</b><span>Records analysed at internship</span></div>
+<div class="stat"><b>3+</b><span>Power BI dashboards built</span></div>
+<div class="stat"><b>~80%</b><span>IPL winner prediction accuracy</span></div>
+</div>
+</div></header>
+
+<section id="about"><div class="wrap">
+<div class="k">About</div><h2>Analytical, hands-on and ready to contribute</h2>
+<div class="about">
+<div>
+<p>I completed my BE in Computer Science at KLE Technological University in 2026. My work centres on data analysis, visualisation and machine learning, using Python, SQL, Power BI and Excel.</p>
+<p>During my internship I cleaned and analysed 10,000+ records and built interactive dashboards. My projects cover predictive modelling, natural language processing and deep learning, and one has been published as a paper.</p>
+<p>I'm looking for a data analytics role where I can apply my analytical and problem-solving skills.</p>
+</div>
+<dl class="facts">
+<dt>Location</dt><dd>Belagavi, India</dd>
+<dt>Languages</dt><dd>English, Kannada, Hindi</dd>
+<dt>Focus</dt><dd>Data analysis, visualisation, machine learning</dd>
+<dt>Email</dt><dd>mufidasavadi@gmail.com</dd>
+</dl>
+</div>
+<div class="roles">
+<p>I'm open to full-time roles such as:</p>
+<div class="tags"><span>Data Analyst</span><span>MIS Executive</span><span>Operations Executive</span><span>Business Analyst</span><span>BI / Reporting Analyst</span><span>Power BI Developer</span></div>
+</div>
+</div></section>
+
+<section id="experience" class="alt"><div class="wrap">
+<div class="k">Experience</div><h2>Where I've worked</h2>
+<div class="tl">
+<h3>Data Analytics Intern, Prosys IT Services</h3>
+<div class="m">January 2025 to April 2025</div>
+<ul>
+<li>Analysed datasets of 10,000+ records to extract insights for business decision-making.</li>
+<li>Cleaned and preprocessed data using Python and Excel.</li>
+<li>Developed 3+ interactive Power BI dashboards to visualise key metrics.</li>
+</ul>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="k">Projects</div><h2>Selected work</h2>
+<div class="grid">
+<article class="card"><h3>Predicting IPL Match Winner</h3><div class="type">Machine learning</div>
+<ul><li>Built a model with about 80% accuracy on 10,000+ match records.</li><li>Handled preprocessing, exploratory data analysis and feature engineering.</li></ul>
+<div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div></article>
+<article class="card"><h3>AI Text Detection</h3><div class="type">Natural language processing</div>
+<ul><li>Built a model that detects AI-generated text.</li><li>Achieved high classification accuracy with deep learning.</li></ul>
+<div class="tags"><span>BERT</span><span>RoBERTa</span><span>CNN-LSTM</span></div></article>
+<article class="card"><h3>AI-Powered Home Interior Transformation</h3><div class="type">Deep learning, web app</div>
+<ul><li>Built a system that redesigns room interiors with deep learning.</li><li>Developed a real-time web interface for users.</li></ul>
+<div class="tags"><span>ReactJS</span><span>Flask</span><span>CNN</span><span>GAN</span><span>Stable Diffusion</span></div></article>
+</div>
+<div class="pub"><div><b>Publication</b><span>IPL Match Prediction using Machine Learning</span></div><span>ETTIS 2025</span></div>
+</div></section>
+
+<section id="skills" class="alt"><div class="wrap">
+<div class="k">Skills</div><h2>Tools I work with</h2>
+<div class="skills">
+<div class="sk"><h3>Programming</h3><div class="tags"><span>Python</span><span>SQL</span><span>C</span><span>C++</span></div></div>
+<div class="sk"><h3>Data analysis</h3><div class="tags"><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Machine learning</span></div></div>
+<div class="sk"><h3>Visualisation</h3><div class="tags"><span>Power BI</span><span>Excel</span><span>Dashboard development</span></div></div>
+<div class="sk"><h3>Platforms</h3><div class="tags"><span>Jupyter Notebook</span><span>Kaggle</span><span>Google Colab</span></div></div>
+</div></div></section>
+
+<section id="education"><div class="wrap">
+<div class="k">Education</div><h2>Background and certificates</h2>
+<div class="two">
+<div>
+<h3>BE in Computer Science</h3><p class="m">KLE Technological University, Belagavi. 2022 to 2026</p><p class="m"><b>CGPA 8.64</b></p>
+<ul><li>PU (PCMB), SRA PU College, 2020 to 2022: 95%</li><li>SSLC, Poorna Prajnya English Association School, 2020: 93%</li></ul>
+</div>
+<div>
+<h3>Certificates</h3>
+<ul><li>Machine Learning, NPTEL (IIT Kharagpur)</li><li>NLP for Developers, Infosys</li><li>DevOps Foundation, Infosys</li></ul>
+</div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let's work together</h2>
+<p>I'm available for data analytics roles. Send me a message and I'll reply as soon as I can.</p>
+<div class="cl">
+<a class="btn p" href="mailto:mufidasavadi@gmail.com">mufidasavadi@gmail.com</a>
+<a class="btn s" href="https://linkedin.com/in/mufida-savadi-6b97162a3">LinkedIn</a>
+</div></div></section>
+
+<footer>&copy; 2026 Mufida Savadi</footer>
+</body>
+</html>
